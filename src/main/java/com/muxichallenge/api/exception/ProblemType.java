@@ -9,6 +9,7 @@ public enum ProblemType {
     SYSTEM_ERROR("System error"),
     INVALID_PARAMETER("Invalid parameter"),
     INCOMPRESIBLE_MESSAGE("Incomprehensible message"),
+    RESOURCE_EXISTING("Resource existing"),
     RESOURCE_NOT_FOUND("Resource not found");
 
     private String title;

@@ -24,6 +24,8 @@ Ambiente local: http://localhost:8080
 
 Ambiente remoto: https://conductorchallenge.herokuapp.com
 
+Collection para uso via postman disponível no diretorio collection
+
 - Documentação - /swagger-ui/index.html
 - POST - /api/employee
 - GET - /api/v1/terminal

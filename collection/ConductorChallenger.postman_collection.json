@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "e7e5323e-c995-402d-81db-bb945e7cd021",
+		"name": "ConductorChallenger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Localhost",
+			"item": [
+				{
+					"name": "PutTerminal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logic\": 44332213,\r\n    \"serial\": \"1234\",\r\n    \"model\": \"PWWIN\",\r\n    \"sam\": 0,\r\n    \"ptid\": \"F04A2E4088B\",\r\n    \"plat\": 4,\r\n    \"version\": \"8.00b3\",\r\n    \"mxr\": 0,\r\n    \"mxf\": 16777216,\r\n    \"VERFM\":\"PWWIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/terminal/44332211",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"44332211"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostTerminal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logic\": 44332211,\r\n    \"serial\": \"123\",\r\n    \"model\": \"PWWIN\",\r\n    \"sam\": 0,\r\n    \"ptid\": \"F04A2E4088B\",\r\n    \"plat\": 4,\r\n    \"version\": \"8.00b3\",\r\n    \"mxr\": 0,\r\n    \"mxf\": 16777216,\r\n    \"VERFM\":\"PWWIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/terminal",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"terminal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PatchTerminal",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logic\": 44332212,\r\n    \"serial\": \"12344234234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/terminal/44332212",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"44332212"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllTerminals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/terminal",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"terminal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTerminal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/terminal/44332211",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"44332211"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Heroku",
+			"item": [
+				{
+					"name": "PostTerminal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logic\": 44332211,\r\n    \"serial\": \"123\",\r\n    \"model\": \"PWWIN\",\r\n    \"sam\": 0,\r\n    \"ptid\": \"F04A2E4088B\",\r\n    \"plat\": 4,\r\n    \"version\": \"8.00b3\",\r\n    \"mxr\": 0,\r\n    \"mxf\": 16777216,\r\n    \"VERFM\":\"PWWIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://conductorchallenge.herokuapp.com/api/v1/terminal",
+							"protocol": "https",
+							"host": [
+								"conductorchallenge",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"terminal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutTerminal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logic\": 44332213,\r\n    \"serial\": \"1234\",\r\n    \"model\": \"PWWIN\",\r\n    \"sam\": 0,\r\n    \"ptid\": \"F04A2E4088B\",\r\n    \"plat\": 4,\r\n    \"version\": \"8.00b3\",\r\n    \"mxr\": 0,\r\n    \"mxf\": 16777216,\r\n    \"VERFM\":\"PWWIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://conductorchallenge.herokuapp.com/api/v1/terminal/44332211",
+							"protocol": "https",
+							"host": [
+								"conductorchallenge",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"44332211"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PatchTerminal",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"logic\": 44332212,\r\n    \"serial\": \"12344234234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://conductorchallenge.herokuapp.com/api/v1/terminal/44332212",
+							"protocol": "https",
+							"host": [
+								"conductorchallenge",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"44332212"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllTerminals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://conductorchallenge.herokuapp.com/api/v1/terminal",
+							"protocol": "https",
+							"host": [
+								"conductorchallenge",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"terminal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTerminal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://conductorchallenge.herokuapp.com/api/v1/terminal/44332211",
+							"protocol": "https",
+							"host": [
+								"conductorchallenge",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"terminal",
+								"44332211"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
